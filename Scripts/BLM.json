@@ -1,0 +1,29 @@
+{
+    "version":  7,
+    "jobId":  25,
+    "jobName":  "BLM",
+    "description":  "",
+    "categories":  [
+                       {
+                           "hotkey":  "",
+                           "name":  "CD",
+                           "id":  "CD",
+                           "enabled":  true
+                       },
+                       {
+                           "hotkey":  "",
+                           "name":  "AOE",
+                           "id":  "AOE",
+                           "enabled":  true
+                       },
+                       {
+                           "hotkey":  "",
+                           "name":  "生存",
+                           "id":  "Survival",
+                           "enabled":  true
+                       }
+                   ],
+    "skills":  [
+
+               ]
+}

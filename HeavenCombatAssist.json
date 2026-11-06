@@ -1,0 +1,20 @@
+{
+  "Author": "HeavenTools",
+  "Name": "HeavenCombatAssist",
+  "InternalName": "HeavenCombatAssist",
+  "AssemblyVersion": "1.0.0.6",
+  "Description": "HeavenCombatAssist 为每个战斗职业提供独立 JSON 输出脚本，支持技能分类（CD / AOE / Single / 自定义）、条件调试保存、类别开关、热键施放，以及外部 IPC API 控制。命令 /hca 打开设置。",
+  "ApplicableVersion": "any",
+  "Tags": [
+    "combat",
+    "rotation",
+    "assist"
+  ],
+  "DalamudApiLevel": 15,
+  "LoadRequiredState": 0,
+  "LoadSync": false,
+  "CanUnloadAsync": false,
+  "LoadPriority": 0,
+  "Punchline": "基于 JSON 脚本的战斗职业输出辅助",
+  "AcceptsFeedback": true
+}
