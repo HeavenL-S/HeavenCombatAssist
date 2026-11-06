@@ -1,0 +1,23 @@
+﻿{
+    "Author":  "HeavenTools",
+    "Name":  "HeavenCombatAssist",
+    "Punchline":  "基于 JSON 脚本的战斗职业输出辅助",
+    "Description":  "为每个战斗职业提供独立 JSON 输出脚本，支持技能多分类、施放条件（组内与 / 组间或）、GCD 与能力技时机、分类面板、热键与 IPC。命令 /hca 打开设置。",
+    "InternalName":  "HeavenCombatAssist",
+    "AssemblyVersion":  "1.0.0.6",
+    "RepoUrl":  "https://github.com/HeavenL-S/HeavenCombatAssist",
+    "ApplicableVersion":  "any",
+    "DalamudApiLevel":  15,
+    "IsHide":  false,
+    "IsTestingExclusive":  false,
+    "DownloadCount":  0,
+    "LastUpdate":  1794000180,
+    "Tags":  [
+                 "combat",
+                 "rotation",
+                 "assist"
+             ],
+    "DownloadLinkInstall":  "https://github.com/HeavenL-S/HeavenCombatAssist/raw/main/latest.zip",
+    "DownloadLinkUpdate":  "https://github.com/HeavenL-S/HeavenCombatAssist/raw/main/latest.zip",
+    "DownloadLinkTesting":  "https://github.com/HeavenL-S/HeavenCombatAssist/raw/main/latest.zip"
+}

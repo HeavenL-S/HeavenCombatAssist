@@ -2,6 +2,18 @@
 
 FF14 卫月（Dalamud / Stellar）**战斗输出辅助**插件。按职业用 JSON 脚本配置技能与施放条件，支持分类开关、热键与自动循环。
 
+## 卫月自定义库导入
+
+在游戏内 `/xlsettings` → **实验性功能** → **自定义插件仓库**，添加：
+
+```
+https://raw.githubusercontent.com/HeavenL-S/HeavenCombatAssist/main/repo.json
+```
+
+保存后打开 `/xlplugins`，即可搜索安装 **HeavenCombatAssist**。
+
+> 更新插件时请提高 `repo.json` 里的 `AssemblyVersion`，并替换仓库中的 `latest.zip`。
+
 ## 主要功能
 
 - **按职业独立脚本**  
