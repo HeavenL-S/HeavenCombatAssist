@@ -2,28 +2,1273 @@
     "version":  7,
     "jobId":  37,
     "jobName":  "GNB",
-    "description":  "",
+    "description":  "WrathCombo/RSR baseline: Gunbreaker baseline",
     "categories":  [
                        {
-                           "hotkey":  "",
-                           "name":  "CD",
                            "id":  "CD",
-                           "enabled":  true
+                           "name":  "CD",
+                           "enabled":  true,
+                           "hotkey":  ""
                        },
                        {
-                           "hotkey":  "",
-                           "name":  "AOE",
                            "id":  "AOE",
-                           "enabled":  true
+                           "name":  "AOE",
+                           "enabled":  true,
+                           "hotkey":  ""
                        },
                        {
-                           "hotkey":  "",
-                           "name":  "生存",
-                           "id":  "Survival",
-                           "enabled":  true
+                           "id":  "Single",
+                           "name":  "Single",
+                           "enabled":  true,
+                           "hotkey":  ""
+                       },
+                       {
+                           "id":  "Mitigation",
+                           "name":  "减伤",
+                           "enabled":  true,
+                           "hotkey":  ""
                        }
                    ],
     "skills":  [
-
+                   {
+                       "id":  "lion_heart",
+                       "actionId":  36939,
+                       "actionType":  0,
+                       "nameZh":  "终结之心",
+                       "nameEn":  "Lion Heart",
+                       "categories":  [
+                                          "CD"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  21,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  1,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  2,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "min":  2,
+                                                                               "valueCompare":  3
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "noble_blood",
+                       "actionId":  36938,
+                       "actionType":  0,
+                       "nameZh":  "支配之心",
+                       "nameEn":  "Noble Blood",
+                       "categories":  [
+                                          "CD"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  20,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  1,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  2,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "min":  2,
+                                                                               "valueCompare":  3
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "reign_of_beasts",
+                       "actionId":  36937,
+                       "actionType":  0,
+                       "nameZh":  "崛起之心",
+                       "nameEn":  "Reign of Beasts",
+                       "categories":  [
+                                          "CD"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  19,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  1,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  2,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "min":  2,
+                                                                               "valueCompare":  3
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "double_down",
+                       "actionId":  25760,
+                       "actionType":  0,
+                       "nameZh":  "倍攻",
+                       "nameEn":  "Double Down",
+                       "categories":  [
+                                          "CD"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  18,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  1,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "sonic_break",
+                       "actionId":  16153,
+                       "actionType":  0,
+                       "nameZh":  "音速破",
+                       "nameEn":  "Sonic Break",
+                       "categories":  [
+                                          "CD"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  17,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  1,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  2,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "min":  2,
+                                                                               "valueCompare":  3
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "gnashing_fang",
+                       "actionId":  16146,
+                       "actionType":  0,
+                       "nameZh":  "烈牙",
+                       "nameEn":  "Gnashing Fang",
+                       "categories":  [
+                                          "CD"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  16,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  1,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  2,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "min":  2,
+                                                                               "valueCompare":  3
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "savage_claw",
+                       "actionId":  16147,
+                       "actionType":  0,
+                       "nameZh":  "猛兽爪",
+                       "nameEn":  "Savage Claw",
+                       "categories":  [
+                                          "CD"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  15,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  1,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  2,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "min":  2,
+                                                                               "valueCompare":  3
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "wicked_talon",
+                       "actionId":  16150,
+                       "actionType":  0,
+                       "nameZh":  "凶禽爪",
+                       "nameEn":  "Wicked Talon",
+                       "categories":  [
+                                          "CD"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  14,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  1,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  2,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "min":  2,
+                                                                               "valueCompare":  3
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "fated_circle",
+                       "actionId":  16163,
+                       "actionType":  0,
+                       "nameZh":  "命运之环",
+                       "nameEn":  "Fated Circle",
+                       "categories":  [
+                                          "AOE"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  13,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  1,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  2,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "min":  3,
+                                                                               "valueCompare":  5
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "burst_strike",
+                       "actionId":  16162,
+                       "actionType":  0,
+                       "nameZh":  "爆发击",
+                       "nameEn":  "Burst Strike",
+                       "categories":  [
+                                          "Single"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  12,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  1,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  2,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "min":  2,
+                                                                               "valueCompare":  3
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "no_mercy",
+                       "actionId":  16138,
+                       "actionType":  0,
+                       "nameZh":  "无情",
+                       "nameEn":  "No Mercy",
+                       "categories":  [
+                                          "CD"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  11,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "bow_shock",
+                       "actionId":  16159,
+                       "actionType":  0,
+                       "nameZh":  "弓形冲波",
+                       "nameEn":  "Bow Shock",
+                       "categories":  [
+                                          "CD"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  10,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "blasting_zone",
+                       "actionId":  16165,
+                       "actionType":  0,
+                       "nameZh":  "爆破领域",
+                       "nameEn":  "Blasting Zone",
+                       "categories":  [
+                                          "CD"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  9,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  1,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  2,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "min":  2,
+                                                                               "valueCompare":  3
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "trajectory",
+                       "actionId":  36934,
+                       "actionType":  0,
+                       "nameZh":  "弹道",
+                       "nameEn":  "Trajectory",
+                       "categories":  [
+                                          "CD"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  8,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  1,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "heart_of_corundum",
+                       "actionId":  25758,
+                       "actionType":  0,
+                       "nameZh":  "刚玉之心",
+                       "nameEn":  "Heart of Corundum",
+                       "categories":  [
+                                          "Mitigation"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  7,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  3,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "min":  0,
+                                                                               "max":  70
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "demon_slaughter",
+                       "actionId":  16149,
+                       "actionType":  0,
+                       "nameZh":  "恶魔杀",
+                       "nameEn":  "Demon Slaughter",
+                       "categories":  [
+                                          "AOE"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  6,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  1,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  2,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "min":  3,
+                                                                               "valueCompare":  5
+                                                                           },
+                                                                           {
+                                                                               "kind":  7,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "comboActionId":  16141
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "demon_slice",
+                       "actionId":  16141,
+                       "actionType":  0,
+                       "nameZh":  "恶魔切",
+                       "nameEn":  "Demon Slice",
+                       "categories":  [
+                                          "AOE"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  5,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  1,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  2,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "min":  3,
+                                                                               "valueCompare":  5
+                                                                           },
+                                                                           {
+                                                                               "kind":  7,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "comboActionId":  0
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "solid_barrel",
+                       "actionId":  16145,
+                       "actionType":  0,
+                       "nameZh":  "迅连斩",
+                       "nameEn":  "Solid Barrel",
+                       "categories":  [
+                                          "Single"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  4,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  1,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  2,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "min":  2,
+                                                                               "valueCompare":  3
+                                                                           },
+                                                                           {
+                                                                               "kind":  7,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "comboActionId":  16139
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "brutal_shell",
+                       "actionId":  16139,
+                       "actionType":  0,
+                       "nameZh":  "残暴弹",
+                       "nameEn":  "Brutal Shell",
+                       "categories":  [
+                                          "Single"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  3,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  1,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  2,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "min":  2,
+                                                                               "valueCompare":  3
+                                                                           },
+                                                                           {
+                                                                               "kind":  7,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "comboActionId":  16137
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "keen_edge",
+                       "actionId":  16137,
+                       "actionType":  0,
+                       "nameZh":  "利刃斩",
+                       "nameEn":  "Keen Edge",
+                       "categories":  [
+                                          "Single"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  2,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  1,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  2,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "min":  2,
+                                                                               "valueCompare":  3
+                                                                           },
+                                                                           {
+                                                                               "kind":  7,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0,
+                                                                               "comboActionId":  0
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   },
+                   {
+                       "id":  "lightning_shot",
+                       "actionId":  16143,
+                       "actionType":  0,
+                       "nameZh":  "闪雷弹",
+                       "nameEn":  "Lightning Shot",
+                       "categories":  [
+                                          "Single"
+                                      ],
+                       "enabled":  true,
+                       "respondToHotkey":  true,
+                       "castTarget":  0,
+                       "priority":  1,
+                       "conditions":  {
+                                          "groups":  [
+                                                         {
+                                                             "rules":  [
+                                                                           {
+                                                                               "kind":  0,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           },
+                                                                           {
+                                                                               "kind":  1,
+                                                                               "skillActionId":  0,
+                                                                               "areaShape":  0,
+                                                                               "rangeA":  5,
+                                                                               "rangeB":  90,
+                                                                               "statusId":  0,
+                                                                               "onTarget":  false,
+                                                                               "gaugeProperty":  "",
+                                                                               "gaugeOp":  5,
+                                                                               "gaugeValue":  0
+                                                                           }
+                                                                       ]
+                                                         }
+                                                     ]
+                                      },
+                       "hotkey":  ""
+                   }
                ]
 }

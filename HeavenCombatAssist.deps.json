@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v10.0": {
-      "HeavenCombatAssist/1.0.0.6": {
+      "HeavenCombatAssist/1.0.0.7": {
         "runtime": {
           "HeavenCombatAssist.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "HeavenCombatAssist/1.0.0.6": {
+    "HeavenCombatAssist/1.0.0.7": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
