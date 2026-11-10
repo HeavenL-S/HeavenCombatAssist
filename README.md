@@ -5,7 +5,7 @@ FF14 卫月Dalamud 战斗输出辅助插件。按职业用 JSON 脚本配置技�
 https://qm.qq.com/q/VgyIzeykIo
 
 **DISCORD**
-https://discord.gg/9uvhEMTPU
+https://discord.gg/BPvN6GqR3f
 
 ## 卫月自定义库导入
 https://raw.githubusercontent.com/HeavenL-S/HeavenCombatAssist/main/repo.json
